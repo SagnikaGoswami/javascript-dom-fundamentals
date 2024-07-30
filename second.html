@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <script>
+        <!-- using activeElement -->
+        function getTag()
+        {
+            const tag = document.activeElement.tagName;
+            document.getElementById("result").innerHTML = tag;
+        }
+    </script>
+</head>
+<body onclick="getTag()">
+    <input type="text" placeholder="Enter any number" id="num">
+    <button id="btn">Click me</button>
+    <p id="result></p>
+
+    
+</body>
+</html>
